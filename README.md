@@ -1,9 +1,9 @@
 # CyprusJS
 
-To get the latest info about everything CyprusJS related (event announcements etc.) it's best to follow us on Twitter (@berlinjs)
+To get the latest info about everything CyprusJS related (event announcements etc.) it's best to follow us on Twitter (@cyprusjs)
 
-Website: http://cyprusjs.org
-Twitter: http://twitter.com/cyprusjs
+Website: https://cyprusjs.org
+Twitter: https://twitter.com/cyprusjs
 
 ## How to submit a talk proposal
 
