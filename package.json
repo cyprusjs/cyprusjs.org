@@ -1,0 +1,57 @@
+{
+  "name": "cyprusjs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cyprus JavaScript User Group",
+  "author": "Patrick Heneise <patrick@heneise.co>",
+  "scripts": {
+    "build": "vue-cli-service build --dest ../public",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "lint-autofix": "eslint --ext .js,.vue src test --fix",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit",
+    "update-major": "ncu -u",
+    "update-minor": "ncu -u --semverLevel minor"
+  },
+  "dependencies": {
+    "buefy": "^0.7.3",
+    "bulma": "^0.7.4",
+    "date-fns": "^2.0.0-alpha.27",
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.10.0",
+    "vue-router": "^3.0.2"
+  },
+  "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
+    "@vue/cli-plugin-e2e-nightwatch": "^3.5.1",
+    "@vue/cli-plugin-eslint": "^3.5.1",
+    "@vue/cli-plugin-unit-jest": "^3.5.3",
+    "@vue/cli-service": "^3.5.3",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-i18n": "^0.5.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "engines": {
+    "node": "8",
+    "npm": "6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
