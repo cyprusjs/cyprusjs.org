@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1f771ca7-c3ab-4697-b508-63c2d4d8a4cf/deploy-status)](https://app.netlify.com/sites/cyprusjs/deploys)
+
 # CyprusJS
 
 To get the latest info about everything CyprusJS related (event announcements etc.) it's best to follow us on Twitter (@cyprusjs)
