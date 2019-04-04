@@ -9,10 +9,17 @@
       </div>
     </section>
     <section class="container">
-      <div class="content">
-        <h1 class="title is-1">Next Event: {{ nextEvent.title }}</h1>
+      <b-loading
+        :is-full-page="true"
+        :active.sync="loading"
+        :can-cancel="false"
+      ></b-loading>
+      <div class="content" v-show="!loading">
+        <p class="title is-3 has-text-grey">Next Event:</p>
+        <h1 class="title is-1 ">{{ nextEvent.title }}</h1>
+        <h2 class="subtitle has-text-grey">{{ nextEvent.date }}</h2>
         <p v-html="nextEvent.description" />
-        <h2 class="subtitle is-2">Talks</h2>
+        <h3 class="subtitle is-2">Talks</h3>
         <div class="columns">
           <div
             class="column"
@@ -29,7 +36,6 @@
 
 <script>
 import TalkCard from '../components/TalkCard'
-import proposals from '../utils/proposals'
 import events from '../utils/events'
 import talks from '../utils/talks'
 import marked from 'marked'
@@ -40,6 +46,7 @@ export default {
   },
   data() {
     return {
+      loading: true,
       nextEvent: {
         title: '',
         description: '',
@@ -51,6 +58,12 @@ export default {
   computed: {},
   methods: {},
   mounted() {
+    const dateOptions = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }
     events().then(events => {
       if (events.length <= 0) {
         this.nextEvent = {
@@ -58,12 +71,16 @@ export default {
           description:
             'We need your help! CyprusJS is a community run by volunteers. If you can help organise or host an event, please reach out to [@CyprusJS on Twitter](https://twitter.com/CyprusJS).'
         }
+        this.loading = false
       } else {
         talks(events[0].number).then(eventTalks => {
           this.nextEvent = {
             title: events[0].title,
             description: marked(events[0].description, { sanitize: true }),
-            date: new Date(events[0].due_on),
+            date: new Date(events[0].due_on).toLocaleDateString(
+              'en-GB',
+              dateOptions
+            ),
             talks: eventTalks.map(talk => {
               return {
                 id: talk.id,
@@ -80,22 +97,16 @@ export default {
               description:
                 'Are you working with JavaScript? Tell the community what you do! [Submit a Talk](https://github.com/cyprusjs/talks/issues/new/choose).',
               speaker: {
-                login: 'Anonymous',
+                login: 'Your Name Here',
                 avatar_url:
                   'https://avatars0.githubusercontent.com/u/49163991?s=400&u=b1914f5e5cb59e250d13b869a7ad10cac2b730d1&v=4'
               }
             })
           }
+
+          this.loading = false
         })
       }
-    })
-    proposals().then(data => {
-      this.proposals = data.map(proposal => {
-        return {
-          title: proposal.title,
-          speaker: proposal.user.login
-        }
-      })
     })
   }
 }
