@@ -1,21 +1,10 @@
-export default (
-  url,
-  accessToken,
-  options = {
-    credentials: 'same-origin',
-    cache: 'no-cache'
-  }
-) => {
-  if (url.substr(0, 4) !== 'http') {
-    url = `${process.env.VUE_APP_API_BASE_URL}${url}`
-  }
+export default url => {
+  const etag = localStorage.getItem(`etag:${url}`)
   const fetchHeaders = new Headers()
   fetchHeaders.append('Content-Type', 'application/json')
-  fetchHeaders.append('credentials', options.credentials)
-  fetchHeaders.append('cache', options.cache)
 
-  if (accessToken) {
-    fetchHeaders.append('Authorization', `Bearer ${accessToken}`)
+  if (etag) {
+    fetchHeaders.append('If-None-Match', etag)
   }
 
   const config = {
@@ -27,9 +16,18 @@ export default (
   const request = new Request(url, config)
 
   return fetch(request).then(function(response) {
+    if (response.status === 304) {
+      const data = localStorage.getItem(`data:${url}`)
+      return JSON.parse(data)
+    }
+
     return response
       .json()
       .then(data => {
+        const newEtag = response.headers.get('ETag')
+        localStorage.setItem(`etag:${url}`, newEtag)
+        localStorage.setItem(`data:${url}`, JSON.stringify(data))
+
         return data
       })
       .catch(err => {

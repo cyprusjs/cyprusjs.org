@@ -2,13 +2,13 @@
   <nav class="header navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <router-link class="navbar-item" to="/">
-        <img src="../assets/cyprusjs.svg">
+        <img src="../assets/cyprusjs.svg" />
       </router-link>
     </div>
 
     <div id="header" class="navbar-menu">
       <div class="navbar-start">
-        <router-link class="navbar-item" to="/events">Events</router-link>
+        <!-- <router-link class="navbar-item" to="/events">Events</router-link> -->
       </div>
     </div>
   </nav>

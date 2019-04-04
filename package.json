@@ -5,7 +5,7 @@
   "description": "Cyprus JavaScript User Group",
   "author": "Patrick Heneise <patrick@heneise.co>",
   "scripts": {
-    "build": "vue-cli-service build --dest ./public",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "dev": "vue-cli-service serve",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
@@ -19,6 +19,7 @@
     "buefy": "^0.7.3",
     "bulma": "^0.7.4",
     "date-fns": "^2.0.0-alpha.27",
+    "marked": "^0.6.1",
     "vue": "^2.6.10",
     "vue-i18n": "^8.10.0",
     "vue-router": "^3.0.2"
