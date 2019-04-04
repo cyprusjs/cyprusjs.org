@@ -26,6 +26,8 @@
               <a href="https://twitter.com/cyprusjs"
                 >Follow @CyprusJS on Twitter</a
               >
+            </li>
+            <li>
               <a href="https://github.com/cyprusjs/cyprusjs.org"
                 >Watch the code on GitHub</a
               >
