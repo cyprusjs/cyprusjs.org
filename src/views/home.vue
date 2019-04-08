@@ -3,8 +3,8 @@
     <section class="hero is-primary is-bold">
       <div class="hero-body content">
         <p class="title">CyprusJS</p>
-        <p class="subtitle">
-          CyprusJS is a usergroup focused on JavaScript and related topics.
+        <p class="subtitle is-marginless is-paddingless">
+          CyprusJS is a usergroup focused on JavaScript and related topics. We organise regular events across Cyprus. Free and open source.
         </p>
       </div>
     </section>
@@ -16,7 +16,7 @@
       ></b-loading>
       <div class="content" v-show="!loading">
         <p class="title is-3 has-text-grey">Next Event:</p>
-        <h1 class="title is-1 ">{{ nextEvent.title }}</h1>
+        <h1 class="title is-1">{{ nextEvent.title }}</h1>
         <h2 class="subtitle has-text-grey">{{ nextEvent.date }}</h2>
         <p v-html="nextEvent.description" />
         <h3 class="subtitle is-2">Talks</h3>
@@ -30,6 +30,13 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="container">
+      <p>
+        We need your help! CyprusJS is a community run by volunteers. If you can
+        help organise or host an event, please reach out to
+        <a href="https://twitter.com/CyprusJS">CyprusJS on Twitter</a>.
+      </p>
     </section>
   </div>
 </template>

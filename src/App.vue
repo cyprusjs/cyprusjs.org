@@ -2,6 +2,7 @@
   <div id="app">
     <v-header />
     <router-view />
+    <v-subscribe />
     <v-footer />
   </div>
 </template>
@@ -9,10 +10,12 @@
 <script>
 import Vue from 'vue'
 import Header from './components/Header.vue'
+import Subscribe from './components/Subscribe.vue'
 import Footer from './components/Footer.vue'
 
 Vue.component('v-header', Header)
 Vue.component('v-footer', Footer)
+Vue.component('v-subscribe', Subscribe)
 
 export default {
   name: 'CyprusJS'
@@ -28,11 +31,21 @@ $link: hsl(205, 77, 60);
 $info: hsl(28, 87, 95);
 
 $primary-invert: findColorInvert($primary);
+$info-invert: findColorInvert($info);
+$link-invert: findColorInvert($link);
 
 $colors: (
   'primary': (
     $primary,
     $primary-invert
+  ),
+  'info': (
+    $info,
+    $info-invert
+  ),
+  'link': (
+    $link,
+    $link-invert
   )
 );
 
