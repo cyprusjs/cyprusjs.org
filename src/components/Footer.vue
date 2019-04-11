@@ -40,6 +40,13 @@
             CyprusJS is organized by
             <a href="https://twitter.com/PatrickHeneise">Patrick Heneise</a>
           </p>
+          <br />
+          <h5 class="title is-5">We need your help!</h5>
+          <p>
+            CyprusJS is a community run by volunteers. If you can help organise
+            or host an event, please reach out to
+            <a href="https://twitter.com/CyprusJS">CyprusJS on Twitter</a>.
+          </p>
         </div>
         <div class="column">
           <h5 class="title is-5">Supporters</h5>

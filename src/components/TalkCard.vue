@@ -29,10 +29,24 @@ import marked from 'marked'
 
 export default {
   name: 'TalkCard',
-  props: ['talk'],
+  props: ['gitTalk'],
   computed: {
     compiledMarkdown: function() {
-      return marked(this.talk.description, { sanitize: true })
+      return marked(this.gitTalk.body, { sanitize: true })
+    }
+  },
+  data() {
+    return {
+      talk: {
+        title: '',
+        speaker: {}
+      }
+    }
+  },
+  mounted() {
+    this.talk = {
+      title: this.gitTalk.title,
+      speaker: this.gitTalk.user
     }
   }
 }
