@@ -1,17 +1,26 @@
 <template>
-  <article class="content shade">
-    <h1 class="title is-1">{{ event.title }}</h1>
-    <h2 class="subtitle has-text-grey">{{ event.date }}</h2>
-    <p v-html="event.description" />
-    <div class="talks" v-show="event.hasTalks">
-      <h3 class="subtitle is-2">Talks</h3>
-      <div class="columns">
-        <div class="column" v-for="talk in talks" v-bind:key="talk.id">
-          <TalkCard v-bind:gitTalk="talk" />
-        </div>
-      </div>
-    </div>
-  </article>
+  <div class="column is-4">
+    <article class="card">
+      <header class="card-content">
+        <h4 class="title">
+          {{ event.title }}
+        </h4>
+        <h5 class="subtitle">
+          {{ event.date }}
+        </h5>
+      </header>
+      <footer class="card-footer">
+        <p class="card-footer-item">
+            <a v-html="event.description">More Info</a>
+        </p>
+        <p class="card-footer-item">
+          <span>
+            <a v-html="event.description">Sign Up </a>
+          </span>
+        </p>
+      </footer>
+    </article>
+  </div>
 </template>
 
 <script>
