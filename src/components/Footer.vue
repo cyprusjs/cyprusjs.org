@@ -1,67 +1,78 @@
 <template>
-  <section class="footer">
-    <div class="container">
-      <div class="content">
-        <h5 class="title is-5">Code of Conduct</h5>
-        <p>
-          Our goal is to have an awesome, inclusive and safe community meetup
-          where people meet, hang out together, chat, listen to talks, exchange
-          ideas and make new friends. Any harmful or discriminating behaviour
-          will not be tolerated and results in the offending person being
-          expelled from the meetup.
-        </p>
-        <p>
-          For details on what kinds of behaviour are not tolerated and
-          consequences for violating these rules, we refer to the
-          <a href="https://rubyberlin.github.io/code-of-conduct"
-            >Berlin Code of Conduct.</a
-          >
-        </p>
+  <footer class="footer" aria-label="page footer">
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+
+          <article class="column">
+            <h5 class="title is-5">Get in touch</h5>
+            <nav>
+              <ul class="menu-list">
+                <li>
+                  <a href="https://twitter.com/cyprusjs" target="_blank">Twitter</a>
+                </li>
+                <li>
+                  <a href="https://github.com/cyprusjs/cyprusjs.org" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/Cyprusjs-431172884395749/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://github.com/cyprusjs/cyprusjs.org" target="_blank">Instagram</a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+
+          <article class="column">
+            <h5 class="title is-5">The Team</h5>
+            <nav>
+              <ul class="menu-list">
+                <li>
+                  <a href="https://twitter.com/PatrickHeneise" target="_blank">Patrick Heneise</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/jonasbroms" target="_blank">Jonas Bröms</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/alexandr_bbm" target="_blank">Alexander Gazizov</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/elgin_ali" target="_blank">Ali Elgin</a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+
+          <article class="column">
+            <h5 class="title is-5">Supporters</h5>
+            <nav>
+              <ul class="menu-list">
+                <li>
+                  <a href="https://hugge.space/" target="_blank">Hügge Space</a>
+                </li>
+                <li>
+                  <a href="http://www.ariscy.com/" target="_blank">ARIS</a>
+                </li>
+                <li>
+                  <a href="https://www.odduse.com/" target="_blank">Odduse</a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
       </div>
-      <div class="columns">
+    </section>
+
+    <section class="section">
+      <div class="container">
         <div class="column">
-          <h5 class="title is-5">Get in touch</h5>
-          <ul>
-            <li>
-              <a href="https://twitter.com/cyprusjs"
-                >Follow @CyprusJS on Twitter</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/cyprusjs/cyprusjs.org"
-                >Watch the code on GitHub</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="column">
-          <h5 class="title is-5">The Team</h5>
-          <p>
-            CyprusJS is organized by
-            <a href="https://twitter.com/PatrickHeneise">Patrick Heneise</a>
-          </p>
-          <br />
-          <h5 class="title is-5">We need your help!</h5>
-          <p>
-            CyprusJS is a community run by volunteers. If you can help organise
-            or host an event, please reach out to
-            <a href="https://twitter.com/CyprusJS">CyprusJS on Twitter</a>.
-          </p>
-        </div>
-        <div class="column">
-          <h5 class="title is-5">Supporters</h5>
-          <ul>
-            <li>
-              <p>
-                Paphos events are hosted by
-                <a href="https://jungle.space">Jungle.Space</a>
-              </p>
-            </li>
-          </ul>
+          <p class="is-size-7">Copyright © 2019 CyprusJS. All rights reserved.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </footer>
 </template>
 
 <script>
