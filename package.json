@@ -30,6 +30,7 @@
     "bulma": "^0.7.4",
     "date-fns": "^2.0.0-alpha.27",
     "marked": "^0.6.1",
+    "particles.js": "^2.0.0",
     "vue": "^2.6.10",
     "vue-i18n": "^8.10.0",
     "vue-router": "^3.0.2"
@@ -66,11 +67,11 @@
     ]
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/cyprusjs/cyprusjs.org"
+    "type": "git",
+    "url": "https://github.com/cyprusjs/cyprusjs.org"
   },
   "license": {
-    "type" : "MIT",
-    "url" : "https://github.com/cyprusjs/cyprusjs.org/LICENSE"
+    "type": "MIT",
+    "url": "https://github.com/cyprusjs/cyprusjs.org/LICENSE"
   }
 }
