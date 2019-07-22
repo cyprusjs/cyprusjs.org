@@ -3,6 +3,7 @@ import App from '@/App.vue'
 import router from '@/router'
 import Buefy from 'buefy'
 import i18n from './i18n'
+import Particles from '../node_modules/particles.js'
 
 Vue.config.productionTip = false
 Vue.use(Buefy, {
