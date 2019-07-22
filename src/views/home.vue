@@ -4,7 +4,7 @@
       <div class="hero-body" aria-label="page header">
         <div class="container">
           <div class="columns is-vcentered">
-            <div class="column is-5">
+            <div class="column is-6">
               <div class="divider"></div>
               <h1 class="title is-1 is-light is-semibold">CyprusJS</h1>
               <div class="divider"></div>
@@ -53,7 +53,7 @@
 
       <section class="section">
         <div class="container">
-          <div class="columns is-vcentered">
+          <div class="columns">
             <article class="column is-4">
               <h4 class="has-text-centered is-size-2 has-text-weight-semibold has-text-left-mobile">Mission</h4>
               <p class="has-text-centered is-size-4 has-text-left-mobile">Provide great tech events and meetups for Javascript coders.</p>
@@ -72,7 +72,7 @@
 
       <section class="section" id="talk">
         <div class="container">
-          <div class="columns">
+          <div class="columns is-vcentered">
             <div class="column is-5">
               <h4 class="is-size-2 has-text-weight-semibold">Share Your Ideas</h4>
               <p class="is-size-4">
@@ -92,7 +92,7 @@
 
       <section class="section" id="partner">
         <div class="container">
-          <div class="columns">
+          <div class="columns is-vcentered">
             <div class="column is-7">
               <figure class="image is-4by3">
                 <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
@@ -112,7 +112,7 @@
 
       <section class="section">
         <div class="container">
-          <div class="columns">
+          <div class="columns is-vcentered">
             <div class="column is-5">
               <h4 class="is-size-2 has-text-weight-semibold">Our Code of Conduct</h4>
               <p class="is-size-4">
@@ -141,7 +141,7 @@
 
       <section class="section">
         <div class="container">
-          <div class="columns">
+          <div class="columns is-vcentered">
             <div class="column">
               <h3 class="has-text-centered is-size-2 has-text-weight-semibold has-text-left-mobile">Our Team</h3>
             </div>
