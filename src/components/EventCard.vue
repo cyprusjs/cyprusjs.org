@@ -5,7 +5,7 @@
         {{ event.title }}
       </h4>
       <h5 class="has-text-centered is-size-6-desktop is-size-7-tablet is-size-7-mobile">
-        {{ event.date }}
+        <time>{{ event.date }}</time>
       </h5>
     </header>
     <footer class="card-footer">
