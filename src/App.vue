@@ -82,6 +82,8 @@ $colors: (
 }
 section.section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background-image: url(assets/noise.png);
+  background-repeat: repeat;
 }
 .has-background-dark-gradient {
   background-color: #17171D;
