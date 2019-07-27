@@ -89,4 +89,12 @@ export default {
 .content p {
   white-space: pre-line;
 }
+.card {
+  border-radius: 13px;
+  box-shadow:
+   0 20px 30px -15px rgba(0,0,0,0.5),
+   0 40px 40px -20px rgba(0,0,0,0.4),
+   0 70px 50px -30px rgba(0,0,0,0.3),
+   0 40px 60px -5px rgba(0,0,0,0.3);
+}
 </style>
