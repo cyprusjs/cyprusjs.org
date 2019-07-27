@@ -80,4 +80,22 @@ $colors: (
   margin: 0;
   margin-top: 65px;
 }
+section.section {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.has-background-dark-gradient {
+  background-color: #17171D;
+}
+.has-background-darker-gradient {
+  background-color: #121217;
+}
+.has-text-light {
+  color: rgba(255, 255, 255, 0.38);
+}
+.has-text-lighter {
+  color: rgba(255, 255, 255, 0.6);
+}
+.has-text-lightest {
+  color: rgba(255, 255, 255, 0.87);
+}
 </style>
