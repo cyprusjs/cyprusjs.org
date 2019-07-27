@@ -1,0 +1,87 @@
+{
+  "@context": "http://schema.org",
+  "@type": "WPheader",
+  "name": "CyprusJS Page header",
+  "url": "https://cyprusjs.org/#pageheader",
+  "inLanguage": "English",
+  "headline": "CyprusJS",
+  "description": "We connect programmers in Cyprus who love Javascript through cultivating events where we can give them a platform to educate, inspire and demonstrate new technologies to each other.",
+  "copyrightHolder": {
+      "@type": "Organization",
+      "name": "CyprusJS"
+  },
+  "copyrightYear": "2019",
+  "hasPart": [
+    {
+      "@type": "SiteNavigationElement",
+      "name": "CyprusJS Main Navigation",
+      "alternateName": "CyprusJS Main Menu",
+      "inLanguage": "English",
+      "url": "https://cyprusjs.org/#navbar",
+      "license": "https://github.com/cyprusjs/cyprusjs.org/LICENSE",
+      "copyrightHolder": {
+          "@type": "Organization",
+          "name": "CyprusJS"
+      },
+      "copyrightYear": "2019",
+      "mainEntity": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://cyprusjs.org/#our-beliefs",
+            "name": "Our Beliefs"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://cyprusjs.org/#what-we-do",
+            "name": "What We Do"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://cyprusjs.org/#who-we-are",
+            "name": "Who We Are"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://cyprusjs.org/#our-team",
+            "name": "Our Team"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://cyprusjs.org/#chapters",
+            "name": "Chapters"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://github.com/cyprusjs/",
+            "name": "Github"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://ti.to/cyprusjs/",
+            "name": "Events"
+          }
+        }
+      ]
+    }
+  ]
+}
