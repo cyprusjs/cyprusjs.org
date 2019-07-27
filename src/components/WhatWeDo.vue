@@ -26,7 +26,7 @@
       <div class="columns">
         <article class="column is-offset-1-desktop is-5-desktop is-6-tablet">
           <figure class="image is-48x48">
-            <img src="https://bulma.io/images/placeholders/128x128.png">
+            <img src="../assets/sun.svg">
           </figure>
           <h4 class="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold has-text-lightest">Format</h4>
           <p class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-lighter">We have a well structured format for our events that are made to inspire our attendees and spark discussions. Our format has been iteratated and proved its value for all parties involved thanks to the time Patrick spent founding <a href="http://barcelonajs.org/" target="_blank">BarceloneJS</a>. For more information about our format, <a href="https://github.com/cyprusjs/CyprusJS/blob/master/PLAYBOOK.md" target="_blank">see our playbook</a>.</p>
