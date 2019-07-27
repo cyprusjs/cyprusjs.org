@@ -1,10 +1,10 @@
 <template>
-  <footer class="footer" id="pagefooter" aria-label="page footer">
+  <footer class="footer has-background-dark-gradient" id="pagefooter" aria-label="page footer">
     <section class="section">
       <div class="container">
         <div class="columns">
           <article class="column">
-            <h5 class="title is-5">Chapters</h5>
+            <h5 class="title is-5 has-text-lightest">Chapters</h5>
             <nav>
               <ul class="menu-list">
                 <li>
@@ -31,7 +31,7 @@
             </nav>
           </article>
           <article class="column">
-            <h5 class="title is-5">The Team</h5>
+            <h5 class="title is-5 has-text-lightest">The Team</h5>
             <nav>
               <ul class="menu-list">
                 <li>
@@ -58,7 +58,7 @@
             </nav>
           </article>
           <article class="column">
-            <h5 class="title is-5">Partners</h5>
+            <h5 class="title is-5 has-text-lightest">Partners</h5>
             <nav>
               <ul class="menu-list">
                 <li>
@@ -77,39 +77,39 @@
             </nav>
           </article>
           <article class="column" id="socialmedia">
-            <h5 class="title is-5">Get in touch</h5>
+            <h5 class="title is-5 has-text-lightest">Get in touch</h5>
             <nav class="level is-mobile">
               <div class="level-item has-text-centered">
                 <div>
-                  <a class="has-text-centered" href="https://twitter.com/cyprusjs" target="_blank" aria-label="CyprusJS Twitter Page">
+                  <a class="link-twitter" href="https://twitter.com/cyprusjs" target="_blank" aria-label="CyprusJS Twitter Page">
                     <i class="fab fa-twitter fa-2x"></i>
                   </a>
                 </div>
               </div>
               <div class="level-item has-text-centered">
                 <div>
-                  <a href="https://github.com/cyprusjs/cyprusjs.org" target="_blank" aria-label="CyprusJS LinkedIn Page">
+                  <a class="link-github" href="https://github.com/cyprusjs/cyprusjs.org" target="_blank" aria-label="CyprusJS LinkedIn Page">
                     <i class="fab fa-github fa-2x"></i>
                   </a>
                 </div>
               </div>
               <div class="level-item has-text-centered">
                 <div>
-                  <a href="https://www.facebook.com/Cyprusjs-431172884395749/" target="_blank" aria-label="CyprusJS Facebook Page">
+                  <a class="link-facebook" href="https://www.facebook.com/Cyprusjs-431172884395749/" target="_blank" aria-label="CyprusJS Facebook Page">
                     <i class="fab fa-facebook fa-2x"></i>
                   </a>
                 </div>
               </div>
               <div class="level-item has-text-centered">
                 <div>
-                  <a href="https://github.com/cyprusjs/cyprusjs.org" target="_blank" aria-label="CyprusJS Instagram Page">
+                  <a class="link-instagram" href="https://github.com/cyprusjs/cyprusjs.org" target="_blank" aria-label="CyprusJS Instagram Page">
                     <i class="fab fa-instagram fa-2x"></i>
                   </a>
                 </div>
               </div>
               <div class="level-item has-text-centered">
                 <div>
-                  <a href="https://www.linkedin.com/groups/12274238/" target="_blank" aria-label="CyprusJS LinkedIn Page">
+                  <a class="link-linkedin" href="https://www.linkedin.com/groups/12274238/" target="_blank" aria-label="CyprusJS LinkedIn Page">
                     <i class="fab fa-linkedin fa-2x"></i>
                   </a>
                 </div>
@@ -133,4 +133,29 @@
 export default {}
 </script>
 
-<style scoped></style>
+<style scoped>
+.menu-list a {
+  color: rgba(255, 255, 255, 0.38);
+  transition: 0.3s;
+  border-radius: 3px;
+}
+.menu-list a:hover {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.link-twitter,
+.link-facebook,
+.link-instagram,
+.link-linkedin,
+.link-github {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+}
+.link-twitter:hover,
+.link-facebook:hover,
+.link-instagram:hover,
+.link-linkedin:hover,
+.link-github:hover {
+  color: rgba(255, 255, 255, 0.87);
+}
+</style>
