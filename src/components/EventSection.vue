@@ -1,22 +1,26 @@
 <template>
-  <section class="section" id="events">
+  <section class="section has-background-dark-gradient" id="events">
     <div class="container">
-      <h1 class="has-text-centered is-size-4 has-text-weight-semibold has-text-left-mobile">Upcoming Events</h1>
-      <div class="divider"></div>
-      <div class="loading content" v-show="loading">
-        <b-loading
-          :is-full-page="false"
-          :active.sync="loading"
-          :can-cancel="false"
-        ></b-loading>
-      </div>
       <div class="columns">
-        <div
-          class="column is-4"
-          v-for="event in upcomingEvents"
-          v-bind:key="event.id"
-        >
-          <EventCard v-bind:gitEvent="event" />
+        <div class="column is-offset-1-desktop is-10-desktop is-12-tablet">
+          <h1 class="has-text-centered is-size-4 has-text-weight-semibold has-text-left-mobile has-text-light">Upcoming Events</h1>
+          <div class="divider"></div>
+          <div class="loading content" v-show="loading">
+            <b-loading
+              :is-full-page="false"
+              :active.sync="loading"
+              :can-cancel="false"
+            ></b-loading>
+          </div>
+          <div class="columns">
+            <div
+              class="column is-4"
+              v-for="event in upcomingEvents"
+              v-bind:key="event.id"
+            >
+              <EventCard v-bind:gitEvent="event" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
