@@ -1,30 +1,42 @@
 <template>
-  <section class="section" id="what-we-do">
+  <section class="section has-background-dark-gradient" id="chapters">
     <div class="container">
       <div class="columns">
-        <div class="column is-full">
-          <h3 class="has-text-centered has-text-left-mobile is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-weight-semibold">Chapters</h3>
+        <div class="column is-offset-1-desktop is-10-desktop is-12-tablet">
+          <h3 class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-weight-semibold has-text-light">Chapters</h3>
         </div>
       </div>
       <div class="columns">
-        <article class="column is-offset-1 is-5">
-          <h4 class="has-text-centered has-text-left-mobile is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold">Nicosia</h4>
-          <p class="has-text-centered has-text-left-mobile is-size-4-desktop is-size-5-tablet is-size-6-mobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        <article class="column is-offset-1-desktop is-5-desktop is-6-tablet">
+          <h4 class="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold has-text-lightest">Nicosia</h4>
+          <p class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-lighter">Nicosia is the largest city, capital, and seat of government of the island of Cyprus. It is located near the centre of the Mesaoria plain, on the banks of the River Pedieos. It has been continuously inhabited for over 4,500 years. Nicosia is the southeasternmost of all EU member states' capitals.</p>
+          <a class="button is-primary is-outlined" href="https://github.com/cyprusjs/" target="_blank">
+            <strong>Events in Nicosia</strong>
+          </a>
         </article>
-        <article class="column is-5">
-          <h4 class="has-text-centered has-text-left-mobile is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold">Limassol</h4>
-          <p class="has-text-centered has-text-left-mobile is-size-4-desktop is-size-5-tablet is-size-6-mobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        <article class="column is-5-desktop is-6-tablet">
+          <h4 class="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold has-text-lightest">Limassol</h4>
+          <p class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-lighter">Limassol is a city on the southern coast of Cyprus. It’s known for the centuries-old Limassol Castle, home to the Cyprus Medieval Museum and its collection of pottery and tombstones. On the seafront is the Prokymea (Molos) Sculpture Park, with sculptures by Cypriot, Greek and international artists.</p>
+          <a class="button is-primary is-outlined" href="https://github.com/cyprusjs/" target="_blank">
+            <strong>Events in Limassol</strong>
+          </a>
         </article>
       </div>
       <div class="divider"></div>
       <div class="columns">
-        <article class="column is-offset-1 is-5">
-          <h4 class="has-text-centered has-text-left-mobile is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold">Paphos</h4>
-          <p class="has-text-centered has-text-left-mobile is-size-4-desktop is-size-5-tablet is-size-6-mobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        <article class="column is-offset-1-desktop is-5-desktop is-6-tablet">
+          <h4 class="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold has-text-lightest">Paphos</h4>
+          <p class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-lighter">Paphos is a city on the southwest coast of the Mediterranean island of Cyprus. Inhabited since Neolithic times, it has several sites relating to the cult of goddess Aphrodite, whose mythical birthplace was at Old Paphos (Kouklia).</p>
+          <a class="button is-primary is-outlined" href="https://github.com/cyprusjs/" target="_blank">
+            <strong>Events in Paphos</strong>
+          </a>
         </article>
-        <article class="column is-5">
-          <h4 class="has-text-centered has-text-left-mobile is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold">Larnaca</h4>
-          <p class="has-text-centered has-text-left-mobile is-size-4-desktop is-size-5-tablet is-size-6-mobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        <article class="column is-5-desktop is-6-tablet">
+          <h4 class="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold has-text-lightest">Larnaca</h4>
+          <p class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-lighter">Larnaca (Larnarka) is a port city on the south coast of Cyprus. It's known for Finikoudes Beach, a sandy strip in the city center backed by a palm-lined seaside promenade. Buzzing bars line the waterfront at Mackenzie Beach.</p>
+          <a class="button is-primary is-outlined" href="https://github.com/cyprusjs/" target="_blank">
+            <strong>Events in Larnaca</strong>
+          </a>
         </article>
       </div>
     </div>
