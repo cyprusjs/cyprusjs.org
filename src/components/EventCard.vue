@@ -1,26 +1,24 @@
 <template>
-  <div class="column is-4">
-    <article class="card">
-      <header class="card-content">
-        <h4 class="title">
-          {{ event.title }}
-        </h4>
-        <h5 class="subtitle">
-          {{ event.date }}
-        </h5>
-      </header>
-      <footer class="card-footer">
-        <p class="card-footer-item">
-            <a v-html="event.description">More Info</a>
-        </p>
-        <p class="card-footer-item">
-          <span>
-            <a v-html="event.description">Sign Up </a>
-          </span>
-        </p>
-      </footer>
-    </article>
-  </div>
+  <article class="card">
+    <header class="card-content">
+      <h4 class="has-text-centered is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-weight-semibold">
+        {{ event.title }}
+      </h4>
+      <h5 class="has-text-centered is-size-6-desktop is-size-7-tablet is-size-7-mobile">
+        <time>{{ event.date }}</time>
+      </h5>
+    </header>
+    <footer class="card-footer">
+      <p class="card-footer-item">
+        <a v-html="event.description">More Info</a>
+      </p>
+      <p class="card-footer-item">
+        <span>
+          <a v-html="event.description">Sign Up</a>
+        </span>
+      </p>
+    </footer>
+  </article>
 </template>
 
 <script>
@@ -90,5 +88,13 @@ export default {
 }
 .content p {
   white-space: pre-line;
+}
+.card {
+  border-radius: 13px;
+  box-shadow:
+   0 20px 30px -15px rgba(0,0,0,0.5),
+   0 40px 40px -20px rgba(0,0,0,0.4),
+   0 70px 50px -30px rgba(0,0,0,0.3),
+   0 40px 60px -5px rgba(0,0,0,0.3);
 }
 </style>

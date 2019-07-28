@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>lightning</title>
+    <desc>Created with Sketch.</desc>
+    <g id="lightning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M28,55.5 C43.1878306,55.5 55.5,43.1878306 55.5,28 C55.5,12.8121694 43.1878306,0.5 28,0.5 C12.8121694,0.5 0.5,12.8121694 0.5,28 C0.5,43.1878306 12.8121694,55.5 28,55.5 Z M28,54.5 C13.3644541,54.5 1.5,42.6355459 1.5,28 C1.5,13.3644541 13.3644541,1.5 28,1.5 C42.6355459,1.5 54.5,13.3644541 54.5,28 C54.5,42.6355459 42.6355459,54.5 28,54.5 Z" id="Oval" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <polygon id="Path-3" fill="#FFFFFF" points="31.822998 11 19 31.5883789 26.9685059 31.5883789 23.9152832 45.8029785 36.592041 25.3981934 28.6794434 25.3981934"></polygon>
+    </g>
+</svg>
