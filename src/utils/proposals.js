@@ -1,7 +1,7 @@
 import get from './get'
 
 const issuesUrl =
-  'https://api.github.com/repos/cyprusjs/talks/issues?labels=proposals'
+  'https://api.github.com/repos/cyprusjs/cyprusjs/issues?labels=proposals'
 
 export default () => {
   return get(issuesUrl).then(data => {
