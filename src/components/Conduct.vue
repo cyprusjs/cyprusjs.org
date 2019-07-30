@@ -1,16 +1,16 @@
 <template>
-  <section class="section has-background-darker-gradient" id="code-of-conduct" aria-label="Code of Conduct">
+  <section class="section has-background-white-ter" id="code-of-conduct" aria-label="Code of Conduct">
     <div class="container">
       <div class="columns is-vcentered">
         <div class="column is-5">
-          <h3 class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-weight-semibold has-text-light">Lorem</h3>
-          <h4 class="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold has-text-lightest" id="code-conduct">Code of Conduct</h4>
-          <p class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-lighter">
+          <h3 class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-weight-semibold has-text-dark">Our Rules</h3>
+          <h4 class="is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-weight-semibold has-text-darkest" id="code-conduct">Code of Conduct</h4>
+          <p class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-darker">
             Any harmful or discriminating behaviour
             will not be tolerated and results in the offending person being
             expelled from the meetup.
           </p>
-          <p class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-lighter">
+          <p class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-darker">
             For details on what kinds of behaviour are not tolerated and
             consequences for violating these rules, we refer to the
             <a href="https://rubyberlin.github.io/code-of-conduct">Berlin Code of Conduct.</a>
