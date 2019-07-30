@@ -2,7 +2,6 @@
   <div id="app">
     <v-navbar />
     <router-view />
-    <v-subscribe />
     <v-footer />
   </div>
 </template>
@@ -14,6 +13,7 @@ import Pageheader from './components/PageHeader.vue'
 import Eventsection from './components/EventSection.vue'
 import Ourbeliefs from './components/OurBeliefs.vue'
 import Whoweare from './components/WhoWeAre.vue'
+import Terminal from './components/Terminal.vue'
 import Whatwedo from './components/WhatWeDo.vue'
 import Ourteam from './components/OurTeam.vue'
 import Chapters from './components/Chapters.vue'
@@ -29,6 +29,7 @@ Vue.component('v-eventsection', Eventsection)
 Vue.component('v-ourbeliefs', Ourbeliefs)
 Vue.component('v-whatwedo', Whatwedo)
 Vue.component('v-whoweare', Whoweare)
+Vue.component('v-terminal', Terminal)
 Vue.component('v-ourteam', Ourteam)
 Vue.component('v-chapters', Chapters)
 Vue.component('v-speaker', Speaker)
@@ -81,18 +82,27 @@ $colors: (
   margin-top: 65px;
 }
 section.section {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   background-image: url(assets/noise.png);
   background-repeat: repeat;
 }
-.has-background-dark-gradient {
-  background-color: #17171D;
+.has-background-light {
+  background-color: #fafafa;
 }
-.has-background-darker-gradient {
-  background-color: #121217;
+.has-background-lighter {
+  background-color: #ffffff;
+}
+.has-text-dark {
+  color: rgba(1, 29, 51, 0.38);
+}
+.has-text-darker {
+  color: rgba(1, 29, 51, 0.6);
+}
+.has-text-darkest {
+  color: rgba(1, 29, 51, 0.87);
 }
 .has-text-light {
-  color: rgba(255, 255, 255, 0.38);
+  color: rgba(0, 0, 0, 0.38);
 }
 .has-text-lighter {
   color: rgba(255, 255, 255, 0.6);
