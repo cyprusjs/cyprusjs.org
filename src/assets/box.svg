@@ -4,7 +4,7 @@
     <title>box</title>
     <desc>Created with Sketch.</desc>
     <g id="box" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-4" transform="translate(4.000000, 1.000000)" stroke="#000000">
+        <g id="Group-4" transform="translate(4.000000, 1.000000)" stroke="#0D6A78">
             <path d="M23.7857143,-0.577350269 L47.6684002,13.2113249 L47.6684002,40.7886751 L23.7857143,54.5773503 L-0.0969716165,40.7886751 L-0.0969716165,13.2113249 L23.7857143,-0.577350269 Z" id="Polygon" stroke-linejoin="round"></path>
             <polyline id="Path" stroke-linejoin="round" points="47.5714286 12.8571429 23.7857143 25.7142857 0 12.8571429"></polyline>
             <path d="M23.7857143,25.7142857 L23.7857143,54" id="Path-5"></path>

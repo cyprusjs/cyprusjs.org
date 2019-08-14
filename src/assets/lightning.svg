@@ -5,8 +5,8 @@
     <desc>Created with Sketch.</desc>
     <g id="lightning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group-3" transform="translate(1.000000, 0.000000)">
-            <circle id="Oval" stroke="#000000" cx="27" cy="27" r="27"></circle>
-            <polygon id="Path-3" fill="#000000" points="30.822998 11 18 31.5883789 25.9685059 31.5883789 22.9152832 45.8029785 35.592041 25.3981934 27.6794434 25.3981934"></polygon>
+            <circle id="Oval" stroke="#0D6A78" cx="27" cy="27" r="27"></circle>
+            <polygon id="Path-3" fill="#0D6A78" points="30.822998 11 18 31.5883789 25.9685059 31.5883789 22.9152832 45.8029785 35.592041 25.3981934 27.6794434 25.3981934"></polygon>
         </g>
     </g>
 </svg>
