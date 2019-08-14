@@ -8,6 +8,7 @@
 
 <script>
 import Vue from 'vue'
+import VueParticles from 'vue-particles'
 import Navbar from './components/Navbar.vue'
 import Pageheader from './components/PageHeader.vue'
 import Eventsection from './components/EventSection.vue'
@@ -20,7 +21,6 @@ import Chapters from './components/Chapters.vue'
 import Speaker from './components/Speaker.vue'
 import Partner from './components/Partner.vue'
 import Conduct from './components/Conduct.vue'
-import Subscribe from './components/Subscribe.vue'
 import Footer from './components/Footer.vue'
 
 Vue.component('v-navbar', Navbar)
@@ -36,7 +36,7 @@ Vue.component('v-speaker', Speaker)
 Vue.component('v-partner', Partner)
 Vue.component('v-conduct', Conduct)
 Vue.component('v-footer', Footer)
-Vue.component('v-subscribe', Subscribe)
+Vue.use(VueParticles)
 
 export default {
   name: 'CyprusJS'
