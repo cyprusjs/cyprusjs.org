@@ -90,11 +90,21 @@ export default {
   white-space: pre-line;
 }
 .card {
+  border: none;
   border-radius: 13px;
+  transition: 0.3s;
   box-shadow:
-   0 20px 30px -15px rgba(0,0,0,0.5),
-   0 40px 40px -20px rgba(0,0,0,0.4),
-   0 70px 50px -30px rgba(0,0,0,0.3),
-   0 40px 60px -5px rgba(0,0,0,0.3);
+    0 2px 6px 0px rgba(0, 16, 28, 0.12),
+    0 3px 8px -1px rgba(0, 16, 28, 0.08),
+    0 4px 12px -2px rgba(0, 16, 28, 0.05),
+    0 5px 16px -3px rgba(0, 16, 28, 0.05);
+}
+.card:hover {
+  box-shadow:
+    0 20px 24px -15px rgba(0, 16, 28, 0.16),
+    0 40px 32px -20px rgba(0, 16, 28, 0.16),
+    0 70px 48px -30px rgba(0, 16, 28, 0.08),
+    0 40px 54px -5px rgba(0, 16, 28, 0.08);
+  transform: scale(1.02);
 }
 </style>

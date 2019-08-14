@@ -1,9 +1,9 @@
 <template>
-  <section class="section has-background-dark-gradient" id="events">
+  <section class="section has-background-light" id="events">
     <div class="container">
       <div class="columns">
         <div class="column is-offset-1-desktop is-10-desktop is-12-tablet">
-          <h1 class="has-text-centered is-size-4 has-text-weight-semibold has-text-left-mobile has-text-light">Upcoming Events</h1>
+          <h1 class="has-text-centered is-size-4 has-text-weight-semibold has-text-left-mobile has-text-dark">Upcoming Events</h1>
           <div class="divider"></div>
           <div class="loading content" v-show="loading">
             <b-loading

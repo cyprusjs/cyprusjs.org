@@ -1,10 +1,10 @@
 <template>
-  <footer class="footer has-background-dark-gradient" id="pagefooter" aria-label="page footer">
+  <footer class="footer has-background-light" id="pagefooter" aria-label="page footer">
     <section class="section">
       <div class="container">
         <div class="columns">
           <article class="column">
-            <h5 class="title is-5 has-text-lightest">Chapters</h5>
+            <h5 class="title is-5 has-text-darkest">Chapters</h5>
             <nav>
               <ul class="menu-list">
                 <li>
@@ -31,7 +31,7 @@
             </nav>
           </article>
           <article class="column">
-            <h5 class="title is-5 has-text-lightest">The Team</h5>
+            <h5 class="title is-5 has-text-darkest">The Team</h5>
             <nav>
               <ul class="menu-list">
                 <li>
@@ -58,7 +58,7 @@
             </nav>
           </article>
           <article class="column">
-            <h5 class="title is-5 has-text-lightest">Partners</h5>
+            <h5 class="title is-5 has-text-darkest">Partners</h5>
             <nav>
               <ul class="menu-list">
                 <li>
@@ -77,7 +77,7 @@
             </nav>
           </article>
           <article class="column" id="socialmedia">
-            <h5 class="title is-5 has-text-lightest">Get in touch</h5>
+            <h5 class="title is-5 has-text-darkest">Get in touch</h5>
             <nav class="level is-mobile">
               <div class="level-item has-text-centered">
                 <div>
@@ -135,20 +135,32 @@ export default {}
 
 <style scoped>
 .menu-list a {
-  color: rgba(255, 255, 255, 0.38);
+  color: rgba(0, 43, 77, 0.38);
   transition: 0.3s;
   border-radius: 3px;
 }
 .menu-list a:hover {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 43, 77, 0.87);
+  background-color: rgba(0, 43, 77, 0.1);
 }
-.link-twitter,
-.link-facebook,
-.link-instagram,
-.link-linkedin,
+.link-twitter {
+  color: rgb(29, 161, 242);
+  transition: 0.3s;
+}
+.link-facebook {
+  color: rgb(60, 90, 153);
+  transition: 0.3s;
+}
+.link-instagram {
+  color: rgb(131, 58, 180);
+  transition: 0.3s;
+}
+.link-linkedin {
+  color: rgb(0, 119, 181);
+  transition: 0.3s;
+}
 .link-github {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(51, 51, 51);
   transition: 0.3s;
 }
 .link-twitter:hover,
@@ -156,6 +168,9 @@ export default {}
 .link-instagram:hover,
 .link-linkedin:hover,
 .link-github:hover {
-  color: rgba(255, 255, 255, 0.87);
+  opacity: 0.6;
+}
+footer#pagefooter section.section {
+  background: none;
 }
 </style>

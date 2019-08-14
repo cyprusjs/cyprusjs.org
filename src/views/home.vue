@@ -3,21 +3,18 @@
     <v-pageheader />
     <main>
       <v-eventsection />
-      <v-ourbeliefs />
+      <v-beliefsection />
       <v-whoweare />
-      <v-whatwedo />
-      <v-ourteam />
+      <v-dosection />
+      <v-teamsection />
       <v-speaker />
       <v-partner />
       <v-conduct />
-      <v-chapters />
-
+      <v-chaptersection />
     </main>
   </div>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style scoped></style>

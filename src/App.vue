@@ -11,13 +11,17 @@ import Vue from 'vue'
 import VueParticles from 'vue-particles'
 import Navbar from './components/Navbar.vue'
 import Pageheader from './components/PageHeader.vue'
-import Eventsection from './components/EventSection.vue'
-import Ourbeliefs from './components/OurBeliefs.vue'
+import EventSection from './components/EventSection.vue'
+import BeliefSection from './components/BeliefSection.vue'
+import BeliefCard from './components/BeliefCard.vue'
 import Whoweare from './components/WhoWeAre.vue'
 import Terminal from './components/Terminal.vue'
-import Whatwedo from './components/WhatWeDo.vue'
-import Ourteam from './components/OurTeam.vue'
-import Chapters from './components/Chapters.vue'
+import DoSection from './components/DoSection.vue'
+import DoCard from './components/DoCard.vue'
+import TeamSection from './components/TeamSection.vue'
+import TeamCard from './components/TeamCard.vue'
+import ChapterSection from './components/ChapterSection.vue'
+import ChapterCard from './components/ChapterCard.vue'
 import Speaker from './components/Speaker.vue'
 import Partner from './components/Partner.vue'
 import Conduct from './components/Conduct.vue'
@@ -25,13 +29,17 @@ import Footer from './components/Footer.vue'
 
 Vue.component('v-navbar', Navbar)
 Vue.component('v-pageheader', Pageheader)
-Vue.component('v-eventsection', Eventsection)
-Vue.component('v-ourbeliefs', Ourbeliefs)
-Vue.component('v-whatwedo', Whatwedo)
+Vue.component('v-eventsection', EventSection)
+Vue.component('v-beliefsection', BeliefSection)
+Vue.component('v-beliefcard', BeliefCard)
+Vue.component('v-dosection', DoSection)
+Vue.component('v-docard', DoCard)
 Vue.component('v-whoweare', Whoweare)
 Vue.component('v-terminal', Terminal)
-Vue.component('v-ourteam', Ourteam)
-Vue.component('v-chapters', Chapters)
+Vue.component('v-teamsection', TeamSection)
+Vue.component('v-teamcard', TeamCard)
+Vue.component('v-chaptersection', ChapterSection)
+Vue.component('v-chaptercard', ChapterCard)
 Vue.component('v-speaker', Speaker)
 Vue.component('v-partner', Partner)
 Vue.component('v-conduct', Conduct)
@@ -93,16 +101,16 @@ section.section {
   background-color: #ffffff;
 }
 .has-text-dark {
-  color: rgba(1, 29, 51, 0.38);
+  color: rgba(1, 29, 51, 0.38)!important;
 }
 .has-text-darker {
-  color: rgba(1, 29, 51, 0.6);
+  color: rgba(1, 29, 51, 0.6)!important;
 }
 .has-text-darkest {
-  color: rgba(1, 29, 51, 0.87);
+  color: rgba(1, 29, 51, 0.87)!important;
 }
 .has-text-light {
-  color: rgba(0, 0, 0, 0.38);
+  color: rgba(0, 0, 0, 0.38)!important;
 }
 .has-text-lighter {
   color: rgba(255, 255, 255, 0.6);
