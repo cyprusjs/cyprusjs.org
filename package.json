@@ -9,11 +9,13 @@
     "email": "info@cyprusjs.org"
   },
   "author": "Patrick Heneise <patrick@heneise.co>",
-  "contributors": {
-    "name": "Jonas Broms",
-    "email": "jonas.broms@gmail.com",
-    "url": "https://twitter.com/jonasbroms"
-  },
+  "contributors": [
+    {
+      "name": "Jonas Broms",
+      "email": "jonas.broms@gmail.com",
+      "url": "https://twitter.com/jonasbroms"
+    }
+  ],
   "scripts": {
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -46,6 +48,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.2",
     "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-i18n": "^0.5.2",
     "vue-particles": "^1.0.9",
@@ -70,8 +73,5 @@
     "type": "git",
     "url": "https://github.com/cyprusjs/cyprusjs.org"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/cyprusjs/cyprusjs.org/LICENSE"
-  }
+  "license": "MIT"
 }

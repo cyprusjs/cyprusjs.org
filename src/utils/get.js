@@ -21,9 +21,15 @@ export default url => {
       return JSON.parse(data)
     }
 
+    if (response.status === 403) {
+      return {}
+    }
+
     return response
       .json()
       .then(data => {
+        console.log(data)
+
         const newEtag = response.headers.get('ETag')
         localStorage.setItem(`etag:${url}`, newEtag)
         localStorage.setItem(`data:${url}`, JSON.stringify(data))

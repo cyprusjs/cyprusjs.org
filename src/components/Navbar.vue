@@ -1,11 +1,21 @@
 <template>
-  <nav class="header navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav
+    class="header navbar is-fixed-top"
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div class="navbar-brand">
       <router-link class="navbar-item" to="/">
-        <img src="../assets/cyprusjs-logo-color.svg" />
+        <img src="../assets/cyprusjs.svg" />
       </router-link>
 
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+      <a
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navMenu"
+      >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -21,7 +31,7 @@
 
       <div class="navbar-end">
         <a class="navbar-item" href="#about-us">
-          Our Beliefs
+          Our Values
         </a>
         <a class="navbar-item" href="#our-team">
           Our Team
@@ -29,18 +39,23 @@
         <a class="navbar-item" href="#what-we-do">
           What We Do
         </a>
-        <a class="navbar-item" href="#who-we-are">
-          Who We Are
-        </a>
         <a class="navbar-item" href="#chapters">
           Chapters
         </a>
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-primary is-outlined" href="https://github.com/cyprusjs/" target="_blank">
+            <a
+              class="button is-primary is-outlined"
+              href="https://github.com/cyprusjs/"
+              target="_blank"
+            >
               Github
             </a>
-            <a class="button is-primary" href="https://ti.to/cyprusjs/" target="_blank">
+            <a
+              class="button is-primary"
+              href="https://ti.to/cyprusjs/"
+              target="_blank"
+            >
               <strong>Events</strong>
             </a>
           </div>
@@ -70,15 +85,14 @@ export default {
 nav.header.navbar.is-fixed-top {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow:
-   0 20px 30px -15px rgba(0, 16, 28, 0.16),
-   0 40px 40px -20px rgba(0, 16, 28, 0.16),
-   0 70px 50px -30px rgba(0, 16, 28, 0.08),
-   0 40px 60px -5px rgba(0, 16, 28, 0.08);
+  box-shadow: 0 20px 30px -15px rgba(0, 16, 28, 0.16),
+    0 40px 40px -20px rgba(0, 16, 28, 0.16),
+    0 70px 50px -30px rgba(0, 16, 28, 0.08),
+    0 40px 60px -5px rgba(0, 16, 28, 0.08);
 }
-a.navbar-item{
+a.navbar-item {
   color: rgba(0, 43, 77, 0.6);
   transition: 0.3s;
   font-weight: 500;

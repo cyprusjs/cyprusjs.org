@@ -3,7 +3,7 @@
     <v-pageheader />
     <main>
       <v-eventsection />
-      <v-beliefsection />
+      <v-valuesection />
       <v-whoweare />
       <v-dosection />
       <v-teamsection />
