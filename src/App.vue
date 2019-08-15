@@ -8,14 +8,11 @@
 
 <script>
 import Vue from 'vue'
-import VueParticles from 'vue-particles'
 import Navbar from './components/Navbar.vue'
 import Pageheader from './components/PageHeader.vue'
 import EventSection from './components/EventSection.vue'
-import BeliefSection from './components/BeliefSection.vue'
-import BeliefCard from './components/BeliefCard.vue'
-import Whoweare from './components/WhoWeAre.vue'
-import Terminal from './components/Terminal.vue'
+import ValueSection from './components/ValueSection.vue'
+import ValueCard from './components/ValueCard.vue'
 import DoSection from './components/DoSection.vue'
 import DoCard from './components/DoCard.vue'
 import TeamSection from './components/TeamSection.vue'
@@ -30,12 +27,10 @@ import Footer from './components/Footer.vue'
 Vue.component('v-navbar', Navbar)
 Vue.component('v-pageheader', Pageheader)
 Vue.component('v-eventsection', EventSection)
-Vue.component('v-beliefsection', BeliefSection)
-Vue.component('v-beliefcard', BeliefCard)
+Vue.component('v-valuesection', ValueSection)
+Vue.component('v-valuecard', ValueCard)
 Vue.component('v-dosection', DoSection)
 Vue.component('v-docard', DoCard)
-Vue.component('v-whoweare', Whoweare)
-Vue.component('v-terminal', Terminal)
 Vue.component('v-teamsection', TeamSection)
 Vue.component('v-teamcard', TeamCard)
 Vue.component('v-chaptersection', ChapterSection)
@@ -44,7 +39,6 @@ Vue.component('v-speaker', Speaker)
 Vue.component('v-partner', Partner)
 Vue.component('v-conduct', Conduct)
 Vue.component('v-footer', Footer)
-Vue.use(VueParticles)
 
 export default {
   name: 'CyprusJS'
@@ -101,16 +95,16 @@ section.section {
   background-color: #ffffff;
 }
 .has-text-dark {
-  color: rgba(1, 29, 51, 0.38)!important;
+  color: rgba(1, 29, 51, 0.38) !important;
 }
 .has-text-darker {
-  color: rgba(1, 29, 51, 0.6)!important;
+  color: rgba(1, 29, 51, 0.6) !important;
 }
 .has-text-darkest {
-  color: rgba(1, 29, 51, 0.87)!important;
+  color: rgba(1, 29, 51, 0.87) !important;
 }
 .has-text-light {
-  color: rgba(0, 0, 0, 0.38)!important;
+  color: rgba(0, 0, 0, 0.38) !important;
 }
 .has-text-lighter {
   color: rgba(255, 255, 255, 0.6);

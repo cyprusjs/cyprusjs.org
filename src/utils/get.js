@@ -21,6 +21,10 @@ export default url => {
       return JSON.parse(data)
     }
 
+    if (response.status === 403) {
+      return {}
+    }
+
     return response
       .json()
       .then(data => {
