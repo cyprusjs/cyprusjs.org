@@ -85,7 +85,7 @@ $colors: (
 }
 section.section {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  background-image: url(assets/noise.png);
+  background-image: url(/images/noise.png);
   background-repeat: repeat;
 }
 .has-background-light {
