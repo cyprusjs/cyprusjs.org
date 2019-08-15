@@ -5,7 +5,10 @@
         <h4 class="title">{{ event.title }}</h4>
         <h5 class="subtitle">
           <time>{{ event.date }}</time>
-          <span class="has-text-weight-semibold" v-html="event.description"></span>
+          <span
+            class="has-text-weight-semibold"
+            v-html="event.description"
+          ></span>
         </h5>
         <div class="columns">
           <div class="column" v-for="talk in talks" v-bind:key="talk.id">
@@ -66,8 +69,7 @@ export default {
               'Are you working with JavaScript? Tell the community what you do! [Submit a Talk](https://github.com/cyprusjs/cyprusjs/issues/new/choose).',
             user: {
               login: 'Call for Speakers is open!',
-              avatar_url:
-                '/images/cyprusjs.svg'
+              avatar_url: '/images/cyprusjs.svg'
             }
           })
         }

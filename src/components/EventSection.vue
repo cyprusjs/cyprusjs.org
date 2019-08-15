@@ -3,10 +3,16 @@
     <div class="container">
       <h1
         class="has-text-centered is-size-4 has-text-weight-semibold has-text-left-mobile has-text-dark"
-      >Upcoming Events</h1>
+      >
+        Upcoming Events
+      </h1>
       <div class="divider"></div>
       <div class="loading content" v-show="loading">
-        <b-loading :is-full-page="false" :active.sync="loading" :can-cancel="false"></b-loading>
+        <b-loading
+          :is-full-page="false"
+          :active.sync="loading"
+          :can-cancel="false"
+        ></b-loading>
       </div>
       <div v-for="event in upcomingEvents" v-bind:key="event.id">
         <EventCard v-bind:gitEvent="event" />

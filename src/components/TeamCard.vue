@@ -14,12 +14,12 @@
     </figure>
     <div class="media-content">
       <div class="content">
-        <h5
-          class="is-size-4 has-text-weight-semibold has-text-darkest"
-        >
+        <h5 class="is-size-4 has-text-weight-semibold has-text-darkest">
           <a :href="html_url">{{ member.login }}</a>
         </h5>
-        <h6 class="is-size-5-desktop is-size-6-tablet is-size-5-mobile has-text-dark"></h6>
+        <h6
+          class="is-size-5-desktop is-size-6-tablet is-size-5-mobile has-text-dark"
+        ></h6>
       </div>
     </div>
   </article>
@@ -37,9 +37,9 @@ export default {
   margin-bottom: 0.25em;
 }
 .clip-svg {
-        width: 0;
-        height: 0;
-    }
+  width: 0;
+  height: 0;
+}
 .is-hexagon {
   -webkit-clip-path: polygon(
     50% 0%,

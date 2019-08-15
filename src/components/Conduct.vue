@@ -29,7 +29,8 @@
           >
             For details on what kinds of behaviour are not tolerated and
             consequences for violating these rules, we refer to the
-            <a href="https://github.com/cyprusjs/CyprusJS/blob/master/CODE_OF_CONDUCT.md"
+            <a
+              href="https://github.com/cyprusjs/CyprusJS/blob/master/CODE_OF_CONDUCT.md"
               >Citizen Code of Conduct.</a
             >
           </p>

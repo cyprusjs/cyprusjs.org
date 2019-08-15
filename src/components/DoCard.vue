@@ -9,7 +9,9 @@
       {{ whatwedo.headline }}
     </h4>
     <p
-      class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-darker" v-html="whatwedo.paragraph"></p>
+      class="is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-darker"
+      v-html="whatwedo.paragraph"
+    ></p>
   </article>
 </template>
 

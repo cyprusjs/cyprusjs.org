@@ -3,7 +3,9 @@
     <div class="container">
       <h3
         class="has-text-centered is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-weight-semibold has-text-dark"
-      >Our Values</h3>
+      >
+        Our Values
+      </h3>
       <div class="columns is-centered">
         <div class="column" v-for="value in values" v-bind:key="value.id">
           <v-valuecard v-bind:key="value.id" v-bind:value="value" />

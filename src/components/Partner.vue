@@ -4,10 +4,7 @@
       <div class="columns is-vcentered">
         <div class="column is-7">
           <figure class="image is-4by3 is-hidden-mobile">
-            <img
-              src="/images/IMG_6597.jpeg"
-              alt="Placeholder image"
-            />
+            <img src="/images/IMG_6597.jpeg" alt="Placeholder image" />
           </figure>
         </div>
         <div class="column is-5">

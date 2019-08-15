@@ -10,7 +10,13 @@
     >
       {{ chapter.paragraph }}
     </p>
-    <a class="button is-primary is-outlined" :href="`https://github.com/cyprusjs/CyprusJS/issues?q=label%3A${chapter.headline}`" target="_blank">
+    <a
+      class="button is-primary is-outlined"
+      :href="
+        `https://github.com/cyprusjs/CyprusJS/issues?q=label%3A${chapter.headline}`
+      "
+      target="_blank"
+    >
       <strong>Events in {{ chapter.headline }}</strong>
     </a>
   </article>

@@ -3,7 +3,9 @@
     <div class="container">
       <h3
         class="has-text-centered is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-weight-semibold has-text-dark"
-      >Our Team</h3>
+      >
+        Our Team
+      </h3>
       <div class="columns is-multiline">
         <div
           class="column is-6-desktop is-12-tablet"

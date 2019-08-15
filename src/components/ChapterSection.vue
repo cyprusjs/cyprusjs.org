@@ -3,7 +3,9 @@
     <div class="container">
       <h3
         class="has-text-centered is-size-4-desktop is-size-5-tablet is-size-6-mobile has-text-weight-semibold has-text-dark"
-      >Chapters</h3>
+      >
+        Chapters
+      </h3>
       <div class="columns is-centered is-multiline">
         <div
           class="column is-offset-1-desktop is-5-desktop is-6-tablet"

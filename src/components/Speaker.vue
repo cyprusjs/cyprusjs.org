@@ -38,10 +38,7 @@
         </div>
         <div class="column is-7" style="float">
           <figure class="image is-4by3 is-hidden-mobile">
-            <img
-              src="/images/IMG_6267.jpeg"
-              alt="Placeholder image"
-            />
+            <img src="/images/IMG_6267.jpeg" alt="Placeholder image" />
           </figure>
         </div>
       </div>
