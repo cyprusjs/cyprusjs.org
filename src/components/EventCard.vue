@@ -1,17 +1,23 @@
 <template>
-  <article class="content shade">
-    <h1 class="title is-1">{{ event.title }}</h1>
-    <h2 class="subtitle has-text-grey">{{ event.date }}</h2>
-    <p v-html="event.description" />
-    <div class="talks" v-show="event.hasTalks">
-      <h3 class="subtitle is-2">Talks</h3>
-      <div class="columns">
-        <div class="column" v-for="talk in talks" v-bind:key="talk.id">
-          <TalkCard v-bind:gitTalk="talk" />
+  <div class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h4 class="title">{{ event.title }}</h4>
+        <h5 class="subtitle">
+          <time>{{ event.date }}</time>
+          <span
+            class="has-text-weight-semibold"
+            v-html="event.description"
+          ></span>
+        </h5>
+        <div class="columns">
+          <div class="column" v-for="talk in talks" v-bind:key="talk.id">
+            <TalkCard v-bind:gitTalk="talk" />
+          </div>
         </div>
       </div>
     </div>
-  </article>
+  </div>
 </template>
 
 <script>
@@ -56,15 +62,14 @@ export default {
       this.event.hasTalks = true
       talks(this.gitEvent.number).then(talks => {
         this.talks = talks
-        if (talks.length <= 2) {
+        if (talks.length < 2) {
           talks.push({
             title: 'Your Talk!',
             body:
-              'Are you working with JavaScript? Tell the community what you do! [Submit a Talk](https://github.com/cyprusjs/talks/issues/new/choose).',
+              'Are you working with JavaScript? Tell the community what you do! [Submit a Talk](https://github.com/cyprusjs/cyprusjs/issues/new/choose).',
             user: {
-              login: 'You',
-              avatar_url:
-                'https://avatars0.githubusercontent.com/u/49163991?s=400&u=b1914f5e5cb59e250d13b869a7ad10cac2b730d1&v=4'
+              login: 'Call for Speakers is open!',
+              avatar_url: '/images/cyprusjs.svg'
             }
           })
         }
@@ -81,5 +86,20 @@ export default {
 }
 .content p {
   white-space: pre-line;
+}
+.card {
+  border: none;
+  border-radius: 13px;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px 0px rgba(0, 16, 28, 0.12),
+    0 3px 8px -1px rgba(0, 16, 28, 0.08), 0 4px 12px -2px rgba(0, 16, 28, 0.05),
+    0 5px 16px -3px rgba(0, 16, 28, 0.05);
+}
+.card:hover {
+  box-shadow: 0 20px 24px -15px rgba(0, 16, 28, 0.16),
+    0 40px 32px -20px rgba(0, 16, 28, 0.16),
+    0 70px 48px -30px rgba(0, 16, 28, 0.08),
+    0 40px 54px -5px rgba(0, 16, 28, 0.08);
+  transform: scale(1.02);
 }
 </style>

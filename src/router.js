@@ -9,22 +9,22 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
-  },
-  {
-    path: '/events',
-    name: 'Events',
-    component: function() {
-      return import(/* webpackChunkName: "events" */ './views/events/list.vue')
-    }
-  },
-  {
-    path: '/event/:eventId',
-    name: 'Event',
-    component: function() {
-      return import(/* webpackChunkName: "events" */ './views/events/get.vue')
-    },
-    props: true
   }
+  // {
+  //   path: '/events',
+  //   name: 'Events',
+  //   component: function() {
+  //     return import(/* webpackChunkName: "events" */ './views/events/list.vue')
+  //   }
+  // },
+  // {
+  //   path: '/event/:eventId',
+  //   name: 'Event',
+  //   component: function() {
+  //     return import(/* webpackChunkName: "events" */ './views/events/get.vue')
+  //   },
+  //   props: true
+  // }
 ]
 
 let router = new Router({

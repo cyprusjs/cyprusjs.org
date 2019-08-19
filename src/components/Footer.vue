@@ -1,71 +1,172 @@
 <template>
-  <section class="footer">
-    <div class="container">
-      <div class="content">
-        <h5 class="title is-5">Code of Conduct</h5>
-        <p>
-          Our goal is to have an awesome, inclusive and safe community meetup
-          where people meet, hang out together, chat, listen to talks, exchange
-          ideas and make new friends. Any harmful or discriminating behaviour
-          will not be tolerated and results in the offending person being
-          expelled from the meetup.
-        </p>
-        <p>
-          For details on what kinds of behaviour are not tolerated and
-          consequences for violating these rules, we refer to the
-          <a href="https://rubyberlin.github.io/code-of-conduct"
-            >Berlin Code of Conduct.</a
-          >
-        </p>
+  <footer
+    class="footer has-background-light"
+    id="pagefooter"
+    aria-label="page footer"
+  >
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <article class="column">
+            <h5 class="title is-5 has-text-darkest">Chapters</h5>
+            <nav>
+              <ul class="menu-list">
+                <li>
+                  <a
+                    href="https://ti.to/cyprusjs/cyprusjs-nicosia"
+                    target="_blank"
+                  >
+                    <i class="fab fa-home"></i> Nicosia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://ti.to/cyprusjs/cyprusjs-limassol"
+                    target="_blank"
+                  >
+                    <i class="fab fa-home"></i> Limassol
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://ti.to/cyprusjs/cyprusjs-paphos"
+                    target="_blank"
+                  >
+                    <i class="fab fa-home"></i> Paphos
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://ti.to/cyprusjs/cyprusjs-larnaca"
+                    target="_blank"
+                  >
+                    <i class="fab fa-home"></i> Larnaca
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article class="column">
+            <h5 class="title is-5 has-text-darkest">Partners</h5>
+            <nav>
+              <ul class="menu-list">
+                <li>
+                  <a href="https://hugge.space/" target="_blank">Hügge Space</a>
+                </li>
+                <li>
+                  <a href="http://www.ariscy.com/" target="_blank">ARIS</a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/FutureWorldsCenter/"
+                    target="_blank"
+                    >Future Worlds Center</a
+                  >
+                </li>
+                <li>
+                  <a href="http://www.heneise.co/" target="_blank">HC</a>
+                </li>
+                <li>
+                  <a href="https://www.odduse.com/" target="_blank">Odduse</a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article class="column" id="socialmedia">
+            <h5 class="title is-5 has-text-darkest">Get in touch</h5>
+            <nav class="level is-mobile">
+              <div class="level-item has-text-centered">
+                <div>
+                  <a
+                    class="link-twitter"
+                    href="https://twitter.com/cyprusjs"
+                    target="_blank"
+                    aria-label="CyprusJS Twitter Page"
+                  >
+                    <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <a
+                    class="link-github"
+                    href="https://github.com/cyprusjs/"
+                    target="_blank"
+                    aria-label="CyprusJS GitHub Page"
+                  >
+                    <i class="fab fa-github fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </article>
+        </div>
       </div>
-      <div class="columns">
+    </section>
+    <section class="section" id="pagesocket" aria-label="page socket">
+      <div class="container">
         <div class="column">
-          <h5 class="title is-5">Get in touch</h5>
-          <ul>
-            <li>
-              <a href="https://twitter.com/cyprusjs"
-                >Follow @CyprusJS on Twitter</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/cyprusjs/cyprusjs.org"
-                >Watch the code on GitHub</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="column">
-          <h5 class="title is-5">The Team</h5>
-          <p>
-            CyprusJS is organized by
-            <a href="https://twitter.com/PatrickHeneise">Patrick Heneise</a>
+          <p class="is-size-7">
+            Copyright © 2019 to the Authors of CyprusJS. All rights reserved.
+            The source code is licensed
+            <a
+              href="https://github.com/cyprusjs/cyprusjs.org/LICENSE"
+              target="_blank"
+              >MIT</a
+            >. The website content is licensed
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+              >CC BY NC SA 4.0</a
+            >
           </p>
-          <br />
-          <h5 class="title is-5">We need your help!</h5>
-          <p>
-            CyprusJS is a community run by volunteers. If you can help organise
-            or host an event, please reach out to
-            <a href="https://twitter.com/CyprusJS">CyprusJS on Twitter</a>.
-          </p>
-        </div>
-        <div class="column">
-          <h5 class="title is-5">Supporters</h5>
-          <ul>
-            <li>
-              <p>
-                Paphos events are hosted by
-                <a href="https://jungle.space">Jungle.Space</a>
-              </p>
-            </li>
-          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </footer>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style scoped></style>
+<style scoped>
+.menu-list a {
+  color: rgba(0, 43, 77, 0.38);
+  transition: 0.3s;
+  border-radius: 3px;
+}
+.menu-list a:hover {
+  color: rgba(0, 43, 77, 0.87);
+  background-color: rgba(0, 43, 77, 0.1);
+}
+.link-twitter {
+  color: rgb(29, 161, 242);
+  transition: 0.3s;
+}
+.link-facebook {
+  color: rgb(60, 90, 153);
+  transition: 0.3s;
+}
+.link-instagram {
+  color: rgb(131, 58, 180);
+  transition: 0.3s;
+}
+.link-linkedin {
+  color: rgb(0, 119, 181);
+  transition: 0.3s;
+}
+.link-github {
+  color: rgb(51, 51, 51);
+  transition: 0.3s;
+}
+.link-twitter:hover,
+.link-facebook:hover,
+.link-instagram:hover,
+.link-linkedin:hover,
+.link-github:hover {
+  opacity: 0.6;
+}
+footer#pagefooter section.section {
+  background: none;
+}
+</style>

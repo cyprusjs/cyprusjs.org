@@ -2,8 +2,20 @@
   "name": "cyprusjs",
   "version": "1.0.0",
   "private": true,
-  "description": "Cyprus JavaScript User Group",
+  "description": "CyprusJS Official Website",
+  "homepage": "https://cyprusjs.org/",
+  "bugs": {
+    "url": "https://github.com/cyprusjs/cyprusjs.org/issues",
+    "email": "info@cyprusjs.org"
+  },
   "author": "Patrick Heneise <patrick@heneise.co>",
+  "contributors": [
+    {
+      "name": "Jonas Broms",
+      "email": "jonas.broms@gmail.com",
+      "url": "https://twitter.com/jonasbroms"
+    }
+  ],
   "scripts": {
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -35,9 +47,11 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-i18n": "^0.5.2",
+    "vue-particles": "^1.0.9",
     "vue-template-compiler": "^2.6.10"
   },
   "engines": {
@@ -54,5 +68,10 @@
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyprusjs/cyprusjs.org"
+  },
+  "license": "MIT"
 }
