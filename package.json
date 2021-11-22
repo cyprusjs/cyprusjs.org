@@ -1,6 +1,6 @@
 {
   "name": "cyprusjs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "CyprusJS Official Website",
   "homepage": "https://cyprusjs.org/",
@@ -8,8 +8,18 @@
     "url": "https://github.com/cyprusjs/cyprusjs.org/issues",
     "email": "info@cyprusjs.org"
   },
-  "author": "Patrick Heneise <patrick@heneise.co>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyprusjs/cyprusjs.org"
+  },
+  "license": "MIT",
+  "author": "CyprusJS",
   "contributors": [
+    {
+      "name": "Patrick Heneise",
+      "email": "patrick@zentered.co",
+      "url": "https://zentered.co"
+    },
     {
       "name": "Jonas Broms",
       "email": "jonas.broms@gmail.com",
@@ -17,51 +27,24 @@
     }
   ],
   "scripts": {
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service serve",
-    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "lint-autofix": "eslint --ext .js,.vue src test --fix",
-    "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit",
-    "update-major": "ncu -u",
-    "update-minor": "ncu -u --semverLevel minor"
-  },
-  "dependencies": {
-    "buefy": "^0.7.3",
-    "bulma": "^0.7.4",
-    "date-fns": "^2.0.0-alpha.27",
-    "marked": "^0.6.1",
-    "vue": "^2.6.10",
-    "vue-i18n": "^8.10.0",
-    "vue-router": "^3.0.2"
-  },
-  "devDependencies": {
-    "@kazupon/vue-i18n-loader": "^0.3.0",
-    "@vue/cli-plugin-e2e-nightwatch": "^3.5.1",
-    "@vue/cli-plugin-eslint": "^3.5.1",
-    "@vue/cli-plugin-unit-jest": "^3.5.3",
-    "@vue/cli-service": "^3.5.3",
-    "@vue/eslint-config-prettier": "^4.0.1",
-    "@vue/test-utils": "^1.0.0-beta.29",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.2.2",
-    "node-sass": "^4.12.0",
-    "prettier": "^1.18.2",
-    "sass-loader": "^7.1.0",
-    "vue-cli-plugin-i18n": "^0.5.2",
-    "vue-particles": "^1.0.9",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "engines": {
-    "node": "8",
-    "npm": "6"
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "export": "next export",
+    "start": "next start",
+    "lint": "eslint --fix . --ext .js --ext .jsx --ext md --ext mdx",
+    "pretty": "prettier --write \"{pages,content}/**/*.{js,jsx,md,mdx,css,scss}\"",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "lint-staged": {
     "*.{js,json,css,md}": [
@@ -69,9 +52,44 @@
       "git add"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cyprusjs/cyprusjs.org"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "license": "MIT"
+  "dependencies": {
+    "next": "12.0.4",
+    "next-seo": "^4.28.1",
+    "next-sitemap": "^1.6.203",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-markdown": "^7.1.0",
+    "remark-gfm": "^3.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "^12.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-markdown": "2.2.1",
+    "eslint-plugin-mdx": "^1.16.0",
+    "eslint-plugin-next": "^0.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.4.1",
+    "windicss-webpack-plugin": "^1.5.8"
+  },
+  "engines": {
+    "node": "^16",
+    "npm": "^7"
+  }
 }
