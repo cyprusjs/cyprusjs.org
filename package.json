@@ -65,6 +65,7 @@
     ]
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^3.9.2",
     "next": "12.0.4",
     "next-seo": "^4.28.1",
     "next-sitemap": "^1.6.203",
